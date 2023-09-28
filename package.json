@@ -1,0 +1,59 @@
+{
+  "name": "@hamedstack/playwright-screenplay",
+  "version": "1.0.0",
+  "description": "Screenplay pattern for Playwright.",
+  "keywords": [
+    "screenplay",
+    "playwright",
+    "e2e",
+    "end-to-end",
+    "test",
+    "pageobject",
+    "designpattern",
+    "patterns"
+  ],
+  "license": "MIT",
+  "source": "src/index.ts",
+  "main": "dist/commonjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/commonjs/index.d.ts",
+  "typings": "dist/commonjs/index.d.ts",
+  "engines": {
+    "node": ">=18",
+    "npm": ">=8"
+  },
+  "files": [
+    "dist/*"
+  ],
+  "homepage": "https://github.com/HamedStack/HamedStack.Playwright.Screenplay",
+  "bugs": {
+    "url": "https://github.com/HamedStack/HamedStack.Playwright.Screenplay/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HamedStack/HamedStack.Playwright.Screenplay"
+  },
+  "scripts": {
+    "clean-install": "rimraf package-lock.json && rimraf node_modules && npm install",
+    "build": "rimraf dist && tsc && tsc --build tsconfig.commonjs.json",
+    "lint": "eslint . --fix",
+    "docs": "rimraf docs && typedoc src/index.ts --excludeExternals --externalPattern \"**/node_modules/**\"",
+    "lint-build": "npm run lint && npm run build",
+    "lint-build-doc": "npm run clean-install && npm run lint && npm run build && npm run docs"
+  },
+  "dependencies": {
+    "playwright": "^1.38.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.7.1",
+    "@typescript-eslint/eslint-plugin": "^6.7.3",
+    "@typescript-eslint/parser": "^6.7.3",
+    "eslint": "^8.50.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "^3.0.3",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.2.2",
+    "typedoc": "^0.25.1"
+  }
+}
