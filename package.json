@@ -39,7 +39,8 @@
     "lint": "eslint . --fix",
     "docs": "rimraf docs && typedoc src/index.ts --excludeExternals --externalPattern \"**/node_modules/**\"",
     "lint-build": "npm run lint && npm run build",
-    "lint-build-doc": "npm run clean-install && npm run lint && npm run build && npm run docs"
+    "lint-build-doc": "npm run clean-install && npm run lint && npm run build && npm run docs",
+	"release": "npm publish --access public"	
   },
   "dependencies": {
     "playwright": "^1.38.1"
