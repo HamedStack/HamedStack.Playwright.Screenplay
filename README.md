@@ -1,10 +1,6 @@
 ![playwright](https://user-images.githubusercontent.com/8418700/220898294-ec067d4d-c65c-43ab-96d7-8fdf52d0a6a7.png)
 
-[![Open Source Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](https://opensource.org/licenses/MIT)
-[![npm version](https://badge.fury.io/js/screen.play.write.svg)](https://badge.fury.io/js/screen.play.write)
-[![Downloads](https://img.shields.io/npm/dm/screen.play.write.svg)](https://www.npmjs.com/package/screen.play.write)
-
-## What is Screenplay Pattern?
+## What is a Screenplay Pattern?
 
 The Screenplay Pattern is a user-centric approach to writing workflow-level automated acceptance tests. This helps automation testers to write test cases in terms of Business language.
 
@@ -170,14 +166,6 @@ test('add a new item to todo list', async ({ page }) => {
     expect(answer).toBe("My first todo");
   });
 });
-```
-
-## [NPM](https://www.npmjs.com/package/screen.play.write)
-
-You install it via:
-
-```
-npm i screen.play.write
 ```
 
 ## References
